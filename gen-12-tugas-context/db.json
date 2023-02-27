@@ -1,0 +1,36 @@
+{
+  "note": [
+    {
+      "title": "Routing test",
+      "description": "Buat crud (atau gunakan yg sudah ada) dengan lebih dari 1 halaman menggunakan react router dom (e.g. List, Form, dan Detail)",
+      "category": "Important",
+      "date": "2023-01-25",
+      "time": "09:00",
+      "id": 1
+    },
+    {
+      "title": "Test Edit",
+      "description": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure alias consequatur delectus a obcaecati ea fugiat fuga, porro temporibus? Eum, ",
+      "category": "Important",
+      "date": "2023-01-31",
+      "time": "16:00",
+      "id": 2
+    },
+    {
+      "title": "Gen-12-tugas-context",
+      "description": "pindahkan data/state tempat penyimpanan data dari api ke dalam context",
+      "category": "Daily",
+      "date": "2023-01-31",
+      "time": "16:30",
+      "id": 4
+    },
+    {
+      "title": "test",
+      "description": "kdlafla",
+      "category": "Important",
+      "date": "2022-05-01",
+      "time": "04:35",
+      "id": 5
+    }
+  ]
+}

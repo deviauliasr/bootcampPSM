@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selected Customers</title>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#newcust").change(function () {
+          $("#datanew").show();
+          $("#dataold").hide();
+        });
+
+        $("#oldcust").change(function () {
+          $("#dataold").show();
+          $("#datanew").hide();
+        });
+
+        $("select").css("width", "50%").select2({
+          placeholder: "---Silakan pilih---",
+          allowClear: true,
+        });
+
+        $("form").submit(function () {
+          if ($("#newcust").is(":checked")) {
+            console.log($("#namaCust").val());
+            console.log($("#kontakCust").val());
+            return false;
+          } else if ($("#oldcust").is(":checked")) {
+            const selectName = $("#namapelanggan").val();
+            console.log(selectName);
+            return false;
+          }
+        });
+
+        ///////////////////////////////////////////Case2///////////////////////////////
+        const produk = [
+          {
+            id: 1,
+            name: "Pantene",
+            price: 24000,
+          },
+          {
+            id: 2,
+            name: "Shinzui",
+            price: 12000,
+          },
+          {
+            id: 3,
+            name: "Rejoice",
+            price: 20000,
+          },
+          {
+            id: 4,
+            name: "Clear",
+            price: 30000,
+          },
+          {
+            id: 5,
+            name: "Lifebuoy",
+            price: 22000,
+          },
+          {
+            id: 6,
+            name: "Head & Shoulder",
+            price: 33000,
+          },
+          {
+            id: 7,
+            name: "Zwitsal",
+            price: 17000,
+          },
+          {
+            id: 8,
+            name: "Sunsilk",
+            price: 15000,
+          },
+        ];
+
+        $.each(produk, function (index, value) {
+          $("#produk").append('<option value="' + value.id + '">' + value.name + "</option>");
+        });
+
+        $("#produk").css("width", "100%").select2({
+          placeholder: "--Silakan pilih--",
+          allowClear: true,
+        });
+
+        let ListProduk = "";
+        produk.forEach((p) => {
+          ListProduk += `<option value="${p.id}">${p.name}</option>`;
+        });
+
+        $("#tambahField").click(function () {
+          $(".input").append(
+            `<table id="input_list">
+            <tr>
+              <th>Pilih Produk</th>
+              <th>Harga</th>
+              <th>Quantity</th>
+              <th></th>
+            </tr>
+            <tr>
+              <th>
+                <select id="produk">
+                  <option value="" selected hidden>--Silakan Pilih Produk--</option>
+                  ${ListProduk}
+                </select>
+              </th>
+              <th>
+                <input type="text" id="harga" placeholder="0" />
+              </th>
+              <th>
+                <input type="number" id="quantity" placeholder="0" />
+              </th>
+            </tr>
+          </table>`
+          );
+        });
+
+        $("#kurangField").click(function () {
+          $("#input_list:last-child").remove();
+        });
+
+        function multiply() {}
+      });
+    </script>
+    <style>
+      .data {
+        display: none;
+        margin-top: 50px;
+      }
+
+      table {
+        text-align: left;
+      }
+
+      form {
+        margin: 40px;
+      }
+
+      input,
+      label,
+      select {
+        margin-top: 10px;
+        margin-bottom: 5px;
+      }
+
+      #total {
+        margin: 9px;
+        display: block;
+      }
+
+      .tambah {
+        border: 1px solid black;
+        padding: 0px 4px;
+        background-color: transparent;
+        border-radius: 0;
+        color: grey;
+        border-color: grey;
+      }
+
+      .tambah:hover {
+        color: black;
+        border-color: black;
+      }
+
+      button {
+        border: none;
+        color: white;
+        padding: 5px 12px;
+        border-radius: 6px;
+        cursor: pointer;
+        background-color: brown;
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h1>Jenis Customer</h1>
+      <input type="radio" name="jeniscust" id="newcust" value="newcust" />
+      <label for="newcust">Customer Baru</label><br />
+      <input type="radio" name="jeniscust" id="oldcust" value="oldcust" />
+      <label for="oldcust">Pelanggan Lama</label>
+
+      <div class="data" id="datanew">
+        <label>Nama Customer</label><br />
+        <input type="text" id="namaCust" placeholder="xxx" /><br />
+        <label>Kontak</label><br />
+        <input type="text" id="kontakCust" placeholder="0123-456-789" /><br />
+        <button type="submit">Submit</button>
+      </div>
+      <div class="data" id="dataold">
+        <label>Pilih Pelanggan</label>
+        <br />
+        <select id="namapelanggan">
+          <option value=""></option>
+          <option value="Zayn">Zayn</option>
+          <option value="Malik">Malik</option>
+          <option value="Akbar">Akbar</option>
+        </select>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+
+
+
+    <form id="case2">
+      <div>
+        <div class="input">
+          <table id="input_list">
+            <tr>
+              <th>Pilih Produk</th>
+              <th>Harga</th>
+              <th>Quantity</th>
+              <th></th>
+            </tr>
+            <tr>
+              <th>
+                <select id="produk">
+                  <option value="" selected hidden>--Silakan Pilih Produk--</option>
+                </select>
+              </th>
+              <th>
+                <input type="text" id="harga" placeholder="0" />
+              </th>
+              <th>
+                <input type="number" id="quantity" placeholder="0" />
+              </th>
+              <th>
+                <button type="button" class="tambah" id="tambahField">+</button>
+                <button type="button" class="tambah" id="kurangField">-</button>
+              </th>
+            </tr>
+          </table>
+        </div>
+        <div>
+          <p>Total :</p>
+          <button type="submit" name="submit" id="submit_button">Submit</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

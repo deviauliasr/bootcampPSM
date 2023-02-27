@@ -1,0 +1,13 @@
+# TUGAS
+
+- buat project vite baru dengan nama folder gen-12-tugas-react-useeffect(X)
+
+- ubah tugas lifecycle class yang kalian kerjakan beberapa waktu lalu menjadi functional component(X)
+
+- gunakan useEffect untuk mengganti fungsi dari method componentDidMount, componentDidUpdate, dan componentWillUnmount pada class kalian jika ada(X)
+
+- boleh buat aplikasi/tema baru pada tugas ini(X)
+
+- jika mampu, gunakan semua variasi useEffect (tanpa dependency / dependency nya banyak, function pada return, dsb)(X)
+
+- max dikumpulin jam 09.00 besok

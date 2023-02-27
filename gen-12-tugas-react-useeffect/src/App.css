@@ -1,0 +1,91 @@
+h1 {
+  color: brown;
+}
+
+.Card {
+  text-align: center;
+  padding: 40px;
+  padding-top: 10px;
+  background-color: beige;
+}
+
+.Exit {
+  text-align: right;
+}
+
+.Exit button {
+  border-radius: 50%;
+  border: 0;
+  color: white;
+  background-color: brown;
+  cursor: pointer;
+}
+
+.total {
+  color: brown;
+}
+
+.CardHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: medium;
+  color: white;
+}
+
+.Wrapper {
+  background-color: brown;
+  padding: 20px;
+  border-radius: 10%;
+  box-shadow: 0 1px 4px 0 rgb(79, 79, 79);
+}
+
+.inputWrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  align-items: center;
+}
+
+p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+}
+
+#inputThings {
+  border-radius: 10%;
+  border: 0;
+  width: 150px;
+  padding: 8px;
+  height: 25px;
+  background-color: white;
+}
+
+#inputTime {
+  border-radius: 10%;
+  border: 0;
+  padding: 8px;
+  height: 25px;
+  background-color: white;
+}
+
+.inputWrapper button {
+  height: 25px;
+  color: white;
+  border: 0;
+  border-radius: 30%;
+  background-color: burlywood;
+  cursor: pointer;
+  box-shadow: 0 1px 4px 0 wheat;
+}
+
+.ListItem button {
+  border-radius: 50%;
+  border: 0;
+  color: brown;
+  background-color: white;
+  cursor: pointer;
+}

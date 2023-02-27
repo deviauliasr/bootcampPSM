@@ -1,0 +1,30 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.Card {
+  background-color: brown;
+  padding: 10px;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px 0 black;
+}
+
+a {
+  color: burlywood;
+  margin-right: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: rgb(214, 214, 214);
+  margin-right: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  text-decoration: underline;
+}

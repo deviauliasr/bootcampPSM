@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promise Function</title>
+  </head>
+  <body>
+    <script>
+      function tinggiGelombang(x) {
+        return new Promise((resolve, reject) => {
+          if (x === "rendah" || x === "sedang") {
+            resolve("Aktivitas Penyebrangan Dibuka");
+          } else {
+            reject("Aktivitas Penyebrangan Ditutup");
+          }
+        });
+      }
+
+      tinggiGelombang("ekstrem")
+        .then((res) => console.log(res))
+        .catch((err) => console.log(err));
+      tinggiGelombang("rendah")
+        .then((res) => console.log(res))
+        .catch((err) => console.log(err));
+
+      //perbandingan
+      async function cuaca(status) {
+        await new Promise((r) => setTimeout(r, 2000));
+
+        if (status === "ekstrem") {
+          throw "Dermaga Ditutup Sementara";
+        }
+        return "Dermaga Dibuka";
+      }
+
+      async function main() {
+        try {
+          console.log("STATUS PELABUHAN");
+          const kondisi = await cuaca("rendah");
+          console.log(kondisi);
+          const kondisi1 = await cuaca("ekstrem");
+          console.log(kondisi1);
+        } catch (err) {
+          console.log(err);
+        }
+      }
+
+      main();
+    </script>
+  </body>
+</html>

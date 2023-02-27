@@ -1,0 +1,89 @@
+.RegistrationForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+  background: linear-gradient(rgba(186, 233, 216, 0.7), rgba(186, 233, 216, 0.5));
+}
+
+form {
+  background-color: white;
+  padding: 5px 60px;
+  border-radius: 10px;
+  width: 280px;
+  box-shadow: 0 5px 10px 0 rgb(153, 153, 153);
+}
+
+h1 {
+  text-align: center;
+  color: teal;
+}
+
+.formInput {
+  display: block;
+  width: 250px;
+  padding: 0.3rem 0.7rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  border-radius: 5px;
+  color: rgb(38, 38, 38);
+  background-color: white;
+  border: 1px solid gray;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  font-weight: bold;
+  color: gray;
+}
+
+.itemLabel {
+  color: black;
+}
+
+.formItem {
+  margin-bottom: 10px;
+}
+
+.formSelect {
+  display: block;
+  width: 275px;
+  padding: 0.3rem 0.7rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  border-radius: 5px;
+  color: rgb(38, 38, 38);
+  background-color: white;
+  border: 1px solid gray;
+}
+
+button {
+  color: white;
+  font-size: medium;
+  background-color: teal;
+  border: none;
+  width: 275px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 40px;
+  box-shadow: 0 1px 4px 0 rgb(161, 161, 161);
+}
+
+button:hover {
+  background-color: rgb(81, 133, 133);
+  box-shadow: 0 1px 4px 0 rgb(96, 96, 96);
+}
+
+.checkboxItem {
+  display: flex;
+  justify-content: space-between;
+}
+
+.radioItem {
+  display: flex;
+  justify-content: flex-start;
+}

@@ -1,0 +1,6 @@
+# TUGAS
+
+- buat project baru dengan nama gen-12-tugas-react-api-call(X)
+- buat contoh pemanggilan API dari dummyjson menggunakan axios(X)
+- minimal hit 4 api dengan jenis http method yang berbeda(X)
+- max dikumpulkan ntar sore jam 17.00(X)

@@ -1,0 +1,28 @@
+{
+  "note": [
+    {
+      "title": "Routing",
+      "description": "Buat crud (atau gunakan yg sudah ada) dengan lebih dari 1 halaman menggunakan react router dom (e.g. List, Form, dan Detail)",
+      "category": "Important",
+      "date": "2023-01-25",
+      "time": "09:00",
+      "id": 1
+    },
+    {
+      "title": "gen-12-react-crud",
+      "description": "Buat contoh crud menggunakan json-server",
+      "category": "Important",
+      "date": "2023-01-24",
+      "time": "09:00",
+      "id": 2
+    },
+    {
+      "title": "gen-12-tugas-react-api-call",
+      "description": "buat contoh pemanggilan API dari dummyjson menggunakan axios",
+      "category": "Daily",
+      "date": "2023-01-23",
+      "time": "17:00",
+      "id": 3
+    }
+  ]
+}

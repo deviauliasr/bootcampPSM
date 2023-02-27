@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled UI</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            margin-left: 20px;
+        }
+
+        .head1 {
+            display: flex;
+            justify-content: space-between;
+            font-size: 20px;
+            margin-top: 30px;
+            margin-left: 20px;
+            margin-right: 20px;
+            background-color: white;
+        }
+
+        .navleft {
+            display: flex;
+        }
+
+        .navright {
+            display: flex;
+            padding: 10px;
+        }
+
+        .signup a{
+            color: white;
+            background-color: black;
+            border-radius: 20px;
+            padding: 10px;
+        }
+
+        .head2 {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 70px;
+            margin-bottom: 80px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 500;
+        }
+
+        .inputemail input{
+            border-radius: 20px;
+            height: 30px;
+            width: 250px;
+            padding: 3px;
+            text-align: left;
+            display: inline;
+        }
+
+        #subscribe {
+            left: -60px;
+            position: relative;
+        }
+
+        .blogleft {
+        margin-left: 40px;
+        }
+
+        .blogright {
+        text-align: justify;
+        font-size: 19px;
+        width: 350px;
+        margin-right: 70px;
+        margin-top: 40px;
+        }
+
+        .head3 {
+            display: flex;
+            margin-left: 20px;
+        }
+
+        .head3 a{
+            color: grey;
+        }
+
+        .head3:hover a{
+            
+            color: black;
+        }
+
+        hr {
+            margin-left: 35px;
+            margin-right: 35px;
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+            height: 42px;
+            width: 90px;
+        }
+
+        .head4 {
+            display: flex;
+            margin-left: 35px;
+            margin-right: 35px;
+        }
+
+        img {
+            width: 500px;
+            box-shadow:  5px 5px 5px rgb(214, 214, 214);
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            height: 400px;
+            width: 500px;
+            margin: 30px;
+        }
+
+        .bio {
+            width: 20rem;
+            background-color: whitesmoke;
+            opacity: 0.5;
+            top: -50px;
+            position: relative;
+        }
+
+        .top {
+            display: flex;
+            padding-left: 5px;
+        }
+
+        .description {
+            width: 20rem;
+            margin-top: 0;
+            top: -70px;
+            position: relative;
+        }
+
+        .description a{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="head1">
+        <div class="navleft">
+            <a href="" style="font-weight: 500;"><p>Untitled UI</p></a>
+            <a href="" ><p>Home</p></a>
+            <a href=""><p>Products</p></a>
+            <a href=""><p>Resources</p></a>
+            <a href=""><p>Pricing</p></a>
+        </div>
+        <div class="navright">
+            <a href=""><b>Log in</b></a>
+            <div class="signup">
+                <a href=""><b>Sign up</b></a>
+            </div>
+
+        </div>
+    </div>
+    <div class="head2">
+        <div class="blogleft">
+            <h1>Untitled Blog</h1>
+            <div class="inputemail">
+                <input type="text" placeholder="Enter your email">
+                <button type="submit" id="subscribe">Subscribe</button>
+            
+            </div>
+        </div>
+        <div class="blogright">
+            <p>New product feature, the latest in technology, solutions, and updates.</p>
+        </div>
+    </div>
+    <div class="head3">
+        <a href=""><b>View all</a>
+        <a href="">Design</a>
+        <a href="">Product</a>
+        <a href="">Development</a>
+        <a href="">Customer Support</a>
+        <a href="">Leadership</a>
+        <a href="">Management</a>
+        <a href="">Interviews</b></a>
+    </div>
+    <hr>
+    <div class="head4">
+        <div class="content">
+            <img src="https://miro.medium.com/max/1400/1*yMUMCNFE2RTPUP1D0Kpiqw.png" style="max-width: 20rem;">
+            <div class="bio">
+                <div class="top">
+                    <p>Olivia Ritye</p>
+                    <p><b>|</b> 20 Jan 2022</p>
+                </div>
+            </div>
+            <div class="description">
+                <a href=""><p><b>UX Review Presentation</b></p></a>
+                <p>How do you create compelling presentation that wow your collagues and impress your managers? Look no further.</p>
+                <small><b>read post</b></small>
+            </div>
+        </div>
+        <div class="content">
+            <img src="https://miro.medium.com/max/1400/1*yMUMCNFE2RTPUP1D0Kpiqw.png" style="max-width: 20rem;">
+            <div class="bio">
+                <div class="top">
+                    <p>Olivia Ritye</p>
+                    <p><b>|</b> 20 Jan 2022</p>
+                </div>
+            </div>
+            <div class="description">
+                <a href=""><p><b>UX Review Presentation</b></p></a>
+                <p>How do you create compelling presentation that wow your collagues and impress your managers? Look no further.</p>
+                <small><b>read post</b></small>
+            </div>
+        </div>
+        <div class="content">
+            <img src="https://miro.medium.com/max/1400/1*yMUMCNFE2RTPUP1D0Kpiqw.png" style="max-width: 20rem;">
+            <div class="bio">
+                <div class="top">
+                    <p>Olivia Ritye</p>
+                    <p><b>|</b> 20 Jan 2022</p>
+                </div>
+            </div>
+            <div class="description">
+                <a href=""><p><b>UX Review Presentation</b></p></a>
+                <p>How do you create compelling presentation that wow your collagues and impress your managers? Look no further.</p>
+                <small><b>read post</b></small>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

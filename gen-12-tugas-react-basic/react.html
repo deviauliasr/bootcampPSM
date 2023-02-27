@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+</head>
+<body>
+    <center>
+        <div id="root"></div>
+    </center>
+    
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        function Welcome (props) {
+            const [name, setName] = React.useState('Kala')
+            return <> 
+            <b onClick={() => setName('Dodi')}>Hai Everyone, Welcome to {name}'s Blog!</b>
+            <p>Blog Pribadi: About {props.content} and {props.content2}</p>
+            </>
+        }
+
+        function Biodata (props) {
+            const [domisili, setDomisili] = React.useState('Jakarta')
+            return <>
+                <p>Perkenalkan, Saya {props.name}.</p>
+                <p onClick={() => setDomisili('Sumatera')}>
+                    Saya berasal dari {domisili}. Saya merupakan Lulusan dari {props.lulusan}.
+                </p>
+                <p>Saya memiliki hobby {props.hobby}, sehingga saya membuat {props.name}'s Blog ini.</p>
+            </>
+        }
+
+        function Content(props) {
+            return <>
+                <button onClick={() => props.otherContent('Tips & Trik Lolos SBMPTN')} >
+                    See More Content
+                </button>
+            </>
+        }
+
+        
+        function Blog () {
+            const [editor, setEditor] = React.useState('Budi')
+            const [content, setContent] = React.useState('Blog Pribadi: Introduction')
+            return <>
+                <Welcome content="Daily Activity" content2="Tips & Trik" />
+                <h1>{content}</h1>
+                <img src={'blog.png'}/>
+                <br/>
+                <small>July 5, 2023|</small>
+                <small onClick={() => setEditor('Pekerti')}> Editor : {editor}</small>
+                <Biodata name="Kala" hobby="menulis" lulusan="ITERA"/>
+                <Content otherContent={setContent}/>
+            </>
+        }
+
+        const container = document.getElementById('root')
+        const root = ReactDOM.createRoot(container)
+        root.render(<Blog />)
+    </script>
+</body>
+</html>

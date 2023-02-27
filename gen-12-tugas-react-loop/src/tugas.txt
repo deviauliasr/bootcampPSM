@@ -1,0 +1,7 @@
+# TUGAS
+
+- silahkan buat project baru menggunakan vite dengan nama gen-12-tugas-react-loop(X)
+- buat sebuah perulangan dari array of object(X)
+- buat tombol hapus untuk masing2 item(X)
+- buat beberapa tombol untuk menambah item ke array tersebut(X)
++ atau bisa menggunakan metode/cara/jalan lain untuk menambah item ke array

@@ -1,0 +1,63 @@
+.FormNotes {
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.DataNotes {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+input,
+select {
+  display: block;
+  width: 250px;
+  font-weight: 300;
+  line-height: 1.5;
+  border-radius: 5px;
+  color: rgb(38, 38, 38);
+  background-color: white;
+  border: 1px solid gray;
+}
+
+.Card {
+  background-color: #95b8d1;
+  width: 300px;
+  color: white;
+  padding: 8px;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0 1px 4px 0 rgb(79, 79, 79);
+}
+
+label {
+  display: inline-block;
+  font-weight: bold;
+  color: gray;
+}
+
+a {
+  text-decoration: underline;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+p {
+  font-size: small;
+}
+
+h1 {
+  color: #809bce;
+  text-shadow: 0 0 8px rgb(200, 200, 200);
+}
+
+button {
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #809bce;
+  color: white;
+  cursor: pointer;
+}

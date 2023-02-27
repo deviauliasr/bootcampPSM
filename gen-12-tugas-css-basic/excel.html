@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Kuliah Saya</title>
+    <style>
+        table, th, td{
+            border-collapse: collapse;
+            padding: 5px;
+            width: 1000px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 300;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+
+        tr.tab1 {
+            background-color: rgb(31, 29, 29);
+            color: white;
+            text-align: center;
+        }
+
+        tr.odd>td{
+            background-color: rgb(228, 226, 226);
+            border: 1px solid white;
+            text-align: center;
+        }
+
+        tr.even>td{
+            background-color: rgb(243, 243, 243);
+            border: 1px solid white;
+            text-align: center;
+        }
+
+        #bisnis {
+            background-color: rgb(190, 216, 190);
+        }
+
+        #fisika {
+            background-color: rgb(226, 191, 188);
+        }
+
+        #mat {
+            background-color: rgb(187, 224, 212);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="3"><h1>Jadwal Kuliah Saya</h1></td>
+            <td colspan="3"><h1>Semester 2</h1></td>
+            <td></td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td><p>Waktu Mulai:</p></td>
+            <td><p>07.30.00</p></td>
+            <td><p>Interval Waktu:</p></td>
+            <td><p>30</p></td>
+            <td><p>(dalam menit)</p></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="tab1">
+            <td>Waktu</td>
+            <td>Sen</td>
+            <td>Sel</td>
+            <td>Rab</td>
+            <td>Kam</td>
+            <td>Jum</td>
+            <td>Sab</td>
+        </tr>   
+        <tr class="odd">
+            <td>07.30.00</td>
+            <td>Sarapan</td>
+            <td>Sarapan</td>
+            <td>Sarapan</td>
+            <td>Sarapan</td>
+            <td>Sarapan</td>
+            <td></td>
+        </tr>
+        <tr class="even">
+            <td>08.00.00</td>
+            <td id="bisnis" rowspan="2">Bisnis: Kuliah <br>Ged B, R 256</td>
+            <td id="fisika" rowspan="3">Fisika: Lab <br>Ged J, R 309</td>
+            <td id="bisnis" rowspan="2">Bisnis: Kuliah <br>Ged B, R 256</td>
+            <td id="fisika" rowspan="3">Fisika: Lab <br>Ged J, R 309</td>
+            <td id="bisnis" rowspan="2">Bisnis: Kuliah <br>Ged B, R 256</td>
+            <td></td>
+        </tr>
+        <tr class="odd">
+            <td>08.30.00</td>
+            <td>Sarapan</td>
+        </tr>
+        <tr class="even">
+            <td>09.00.00</td>
+            <td id="mat" rowspan="2">Matematika Terapan <br>Ged H, R 100</td>
+            <td id="mat" rowspan="2">Matematika Terapan <br>Ged H, R 100</td>
+            <td id="mat" rowspan="2">Matematika Terapan <br>Ged H, R 100</td>
+            <td></td>
+        </tr>
+        <tr class="odd">
+            <td>09.30.00</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="even">
+            <td>10.00.00</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="odd">
+            <td>10.30.00</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="even">
+            <td>11.00.00</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>  
+    </table>
+</body>
+</html>

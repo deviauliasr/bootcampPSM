@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grocery Shop</title>
+  </head>
+  <body>
+    <script>
+      function market() {
+        return "Selamat Berbelanja!";
+      }
+
+      const customer = {
+        name: "Sarah",
+        address: "Bogor",
+        age: 20,
+        hobby: ["cooking", "swimming"],
+        groceryList: {
+          fruit: "apple",
+          veg: "spinach",
+          dairy: "yoghurt",
+          fish: "salmon",
+        },
+        additional: [
+          {
+            herbs: "oregano",
+            spices: "ginger",
+            baking: "vanila extract",
+          },
+          {
+            herbs: "basil",
+            spices: "cinnamon",
+            baking: "baking powder",
+          },
+        ],
+
+        //referenced function
+        shop: market,
+
+        //anonymous function & using "this"
+        id: function () {
+          return this.name + " from " + this.address;
+        },
+
+        //arrow function
+        shopping: () => {
+          return "Sedang Berbelanja";
+        },
+
+        //reguler function
+        pay() {
+          return "Silakan Bayar di Kasir";
+        },
+
+        //methodAddingObject
+        addAdditional(obj) {
+          this.additional.push(obj);
+        },
+      };
+
+      document.write(customer.shop());
+
+      console.log(customer.shop());
+      console.log(customer.id());
+      console.log(customer.hobby);
+
+      console.log(customer.shopping());
+      console.log(customer.groceryList);
+      console.log(customer.additional.length);
+      console.log(customer.groceryList.dairy);
+
+      const add2 = {
+        herbs: "coriander",
+        spices: "nutmeg",
+        baking: "flour",
+      };
+      customer.addAdditional(add2);
+      console.log(customer.additional.length);
+      console.log(customer.additional);
+
+      console.log(customer.pay());
+    </script>
+  </body>
+</html>

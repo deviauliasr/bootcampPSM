@@ -1,0 +1,8 @@
+- buat project baru menggunakan create-react-app dengan nama gen-12-tugas-react-class(X)
+- bersihkan direktorinya(X)
+- buat satu komponen menggunakan class(X)
+- requirement component: 
+  - menerima minimal 1 props(X)
+  - memiliki minimal 2 state(X)
+  - ada contoh perubahan props & state(X)
+  - gunakan componentDidUpdate untuk mengupdate state lain(X)

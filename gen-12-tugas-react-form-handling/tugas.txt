@@ -1,0 +1,6 @@
+# TUGAS
+
+- buat project vite baru dengan nama gen-12-tugas-react-form-handling(X)
+- buat sebuah form dengan tema bebas yang memanfaatkan metode form handling yg telah diajarkan(X)
+- minimal ada 3 jenis input yang digunakan(X)
+- max dikumpulkan jam 17.00
